@@ -1,26 +1,18 @@
-"use client";
+import React from 'react'
 
-import React from "react";
-import { Vortex } from "./ui/vortex";
-
-export function Hero() {
+const Hero = () => {
   return (
-    // Render the vortex
-    <div className="mx-auto h-[50rem] overflow-hidden">
-      <Vortex
-        backgroundColor="black"
-        className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
-      >
-        <h2 className="text-white text-2xl md:text-6xl font-bold text-center">
-          Greetings, I'm Adam
-        </h2>
-        <p className="text-white text-sm md:text-2xl max-w-xl mt-6 text-center">
-          I'm a front end developer specializing in ReactJS and WordPress
+    <div className="h-[50rem] w-full dark:bg-slate-950 dark:bg-grid-white/[0.04] bg-grid-black/[0.2] relative flex items-center">
+      {/* Radial gradient for the container to give a faded look */}
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+      <div className='flex flex-col z-20'>
+        <p className="text-4xl sm:text-7xl font-bold relative  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
+            Greetings, I'm Adam
         </p>
-        <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
-          <button className="px-4 py-2 text-white border">View My Work</button>
-        </div>
-      </Vortex>
+        <p className='text-white'>I'm a front end developer with a passion for UX</p>
+      </div>
     </div>
-  );
+  )
 }
+
+export default Hero

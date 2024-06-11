@@ -4,7 +4,7 @@ export const projects = [
         title: "Finish Checker",
         des: "A simple web application built with HTML, CSS, JavaScript, and Open Weather API.",
         img: "/woods.jpeg",
-        link1: "https://www.apple.com",
+        link1: "",
         link2: "https://www.thebeatles.com",
     },
     {
