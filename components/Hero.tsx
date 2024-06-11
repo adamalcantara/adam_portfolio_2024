@@ -5,7 +5,8 @@ import { Vortex } from "./ui/vortex";
 
 export function Hero() {
   return (
-    <div className="mx-auto h-[30rem] overflow-hidden">
+    // Render the vortex
+    <div className="mx-auto h-[50rem] overflow-hidden">
       <Vortex
         backgroundColor="black"
         className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
