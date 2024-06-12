@@ -4,6 +4,7 @@ import { FloatingNav } from "@/components/ui/FloatingNav";
 import Image from "next/image";
 import ProjectCard from "@/components/ui/ProjectCard";
 import Skills from "@/components/Skills";
+import { Testimonials } from "@/components/Testimonials";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <About />
       <Skills />
       <ProjectCard />
+      <Testimonials />
     </main>
   );
 }
