@@ -10,7 +10,7 @@ const Hero = () => {
       {/* Div for text */}
       <div className='flex flex-col z-20 text-white pl-20 sm:text-center sm:w-full sm:pl-0'>
         <TextGenerateEffect 
-            className='text-7xl lg:text-6xl md:text-5xl sm:text-3xl' 
+            className='text-7xl lg:text-6xl md:text-5xl sm:text-4xl' 
             words="Greetings, I'm Adam" 
         />
         <p className='text-3xl md:text-2xl sm:text-xl'>I'm a front end developer</p>
