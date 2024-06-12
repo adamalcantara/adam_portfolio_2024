@@ -37,12 +37,12 @@ const Skills = () => {
       <div className='flex flex-col items-center w-4/5'>
         <p className='text-4xl font-bold'>My Technical Skills</p>
         {/* div for skills */}
-        <div className='mt-10 grid grid-cols-5 gap-x-10'>
+        <div className='mt-10 grid sm:grid-cols-2 grid-cols-5 md:gap-x-25 lg:gap-x-20'>
           {/* map over the skills and create cards */}
           {technologies.map((technology) => (
-            <div className='flex flex-col justify-center items-center'>
-              <p className='text-5xl'>{technology.icon}</p>
-              <p className='text-2xl mt-2'>{technology.name}</p>
+            <div className='flex flex-col justify-center items-center sm:mt-5 md:mt-0'>
+              <p className='md:text-3xl text-5xl'>{technology.icon}</p>
+              <p className='md:text-xl text-2xl mt-2'>{technology.name}</p>
             </div>
           ))}
         </div>
