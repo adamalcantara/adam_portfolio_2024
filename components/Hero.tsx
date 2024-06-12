@@ -8,12 +8,12 @@ const Hero = () => {
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-slate-950 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       
       {/* Div for text */}
-      <div className='flex flex-col z-20 text-white pl-20'>
+      <div className='flex flex-col z-20 text-white pl-20 sm:text-center sm:w-full sm:pl-0'>
         <TextGenerateEffect 
-            className='text-7xl' 
+            className='text-7xl lg:text-6xl md:text-5xl sm:text-3xl' 
             words="Greetings, I'm Adam" 
         />
-        <p className='text-3xl'>I'm a front end developer</p>
+        <p className='text-3xl md:text-2xl sm:text-xl'>I'm a front end developer</p>
       </div>
     </div>
   )
