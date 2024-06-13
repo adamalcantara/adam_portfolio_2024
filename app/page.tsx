@@ -5,6 +5,7 @@ import Image from "next/image";
 import ProjectCard from "@/components/ui/ProjectCard";
 import Skills from "@/components/Skills";
 import { Testimonials } from "@/components/Testimonials";
+import Contact from "@/components/Contact";
 
 import { navItems } from "@/data";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Skills />
       <ProjectCard />
       <Testimonials />
+      <Contact />
     </main>
   );
 }
