@@ -9,7 +9,7 @@ const About = () => {
             {/* right div */}
             <div className='flex flex-col justify-center items-center w-1/2 md:w-full md:mt-10 border-l-2 md:border-l-0 md:border-t-2'>
                 <p className='md:mt-10 font-bold text-2xl'>My Resume</p>
-                <a href="" target='_blank' className='p-3 mt-3 bg-slate-800 hover:bg-slate-600 rounded-md border border-white/[0/1]'>Download</a>
+                <a href='/resume_dev_2024.pdf' target='_blank' className='p-3 mt-3 bg-slate-800 hover:bg-slate-600 rounded-md border border-white/[0/1]'>Download</a>
             </div>
         </div>
     </div>
