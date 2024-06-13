@@ -26,7 +26,7 @@ const projects = [
   {
     id: 3,
     title: "The Guitarologist",
-    des: "This ReactJS website utilizes a responsive masonry gallery with a lightbox by React Photo Album",
+    des: "This ReactJS website has a responsive masonry gallery and lightbox",
     img: theguitarologist,
     link1: "https://github.com/adamalcantara/grunyons",
     link2: "https://thegrunyons.com/",
@@ -37,11 +37,13 @@ const ProjectCard = () => {
   return (
     <div id='portfolio' className='bg-slate-950 flex justify-center flex-col items-center mt-10'>
       <p className='text-4xl font-bold'>My Portfolio</p>
-      <div className='grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-10 w-4/5 mt-10'>
+      {/* Container for the cards */}
+      <div className='grid grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-10 xl:gap-5 w-4/5 xl:w-11/12 2xl:w-11/12 mt-10'>
         {projects.map((project) => (
-            <div className='bg-slate-900 border border-white/[0.2] rounded-xl p-4 '>
+            // The cards
+            <div className='bg-slate-900 border border-white/[0.2] rounded-xl p-4 w-full'>
               <h2 className='font-bold text-2xl'>{project.title}</h2>
-              <p className='mb-4 mt-4'>{project.des}</p>
+              <p className='mb-4 mt-4 lg:text-md xl:text-xs '>{project.des}</p>
               <a href={project.link2}>                
                 <img src={project.img.src} alt="" className='w-full hover:opacity-70 transition duration-200'></img>
               </a>
