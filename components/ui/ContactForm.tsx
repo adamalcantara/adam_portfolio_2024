@@ -4,12 +4,12 @@ import { useForm, ValidationError } from '@formspree/react';
 function ContactForm() {
   const [state, handleSubmit] = useForm("xknddznq");
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+      return <p className='text-center'>Thank you for your message!</p>;
   }
   return (
     <form onSubmit={handleSubmit} className='flex flex-col'>
     <h1 className='text-2xl font-bold'>Contact Me</h1>
-      <label htmlFor="email">
+      <label htmlFor="email" className='mt-1'>
         Email Address
       </label>
       <input
@@ -23,7 +23,7 @@ function ContactForm() {
         field="email"
         errors={state.errors}
       />
-      <label htmlFor="message">
+      <label htmlFor="message" className='mt-3'>
         Message
       </label>
       <textarea

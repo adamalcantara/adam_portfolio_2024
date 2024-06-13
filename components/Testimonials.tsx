@@ -19,15 +19,15 @@ export function Testimonials() {
 const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+      "I had the pleasure of being Adam's Teaching Assistant when he attended UCF's in-depth, 12 week full stack web development bootcamp. Adam worked incredibly hard during his time with us and maintained the highest possible grade average. He and I often worked together outside of class on homework issues, which was a testament to the maximum amount of effort he put in. Adam is a team player. He has a great attitude, a strong work ethic, and is generally a delight to be around. He is a multi-talented individual with a strong background in photography, design, and development. Any employer who adds him to their roster will find great value added to their team.",
+    name: "Dan Rosenbaum",
+    title: "Boot Camp TA",
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
+      "It is rare to find a standout talent like Adam, I had the pleasure of being his classmate at the UCF coding bootcamp. Adam’s eye for design and knowledge in web development was a great asset during multiple group projects. Adam would be a fantastic asset to any organization.",
+    name: "Patrick Moore",
+    title: "Boot Camp Classmate",
   },
   {
     quote: "All that we see or seem is but a dream within a dream.",

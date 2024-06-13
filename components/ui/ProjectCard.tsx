@@ -42,11 +42,13 @@ const ProjectCard = () => {
             <div className='bg-slate-900 border border-white/[0.2] rounded-xl p-4 '>
               <h2 className='font-bold text-2xl'>{project.title}</h2>
               <p className='mb-4 mt-4'>{project.des}</p>
-              <img src={project.img.src} alt="" className='w-full'></img>
+              <a href={project.link2}>                
+                <img src={project.img.src} alt="" className='w-full hover:opacity-70 transition duration-200'></img>
+              </a>
               {/* div for buttons at bottom */}
               <div className='flex justify-between font-bold mt-3'>
-                <a href={project.link1} target='_blank' className='hover:text-sky-600'>Github Repository</a>
-                <a href={project.link2} target='_blank' className='hover:text-sky-600'>Deployed Project</a>
+                <a href={project.link1} target='_blank' className='bg-slate-700 p-2 rounded-md hover:bg-slate-600'>GitHub</a>
+                <a href={project.link2} target='_blank' className='bg-slate-700 p-2 rounded-md hover:bg-slate-600'>Deployed Project</a>
               </div>
             </div>
         ))}
