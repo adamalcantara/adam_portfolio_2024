@@ -35,7 +35,7 @@ const projects = [
 
 const ProjectCard = () => {
   return (
-    <div className='bg-slate-950 flex justify-center flex-col items-center mt-10'>
+    <div id='portfolio' className='bg-slate-950 flex justify-center flex-col items-center mt-10'>
       <p className='text-4xl font-bold'>My Portfolio</p>
       <div className='grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-10 w-4/5 mt-10'>
         {projects.map((project) => (

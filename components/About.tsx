@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='flex justify-center bg-slate-950 p-7'>
+    <div id="about" className='flex justify-center bg-slate-950 p-7'>
         <div className='flex md:flex-col md:items-center md:text-center text-xl text-white w-4/5 p-4'>
             {/* Left div */}
             <div className='w-1/2 md:w-full pr-20 md:pr-0'>I&apos;m a front-end developer who is focused on creating dynamic user experiences and responsive websites. I&apos;m a graduate of Wilmington University with a Bachelor's of Science in Computer Science. I also attended University of Centeral Florida&apos;s full stack web development bootcamp.</div>

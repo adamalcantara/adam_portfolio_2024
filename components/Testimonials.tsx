@@ -5,7 +5,8 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 export function Testimonials() {
   return (
-    <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div id="testimonials" className="h-[40rem] rounded-md flex flex-col antialiased bg-slate-950  dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-slate-950 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <InfiniteMovingCards
         items={testimonials}
         direction="right"

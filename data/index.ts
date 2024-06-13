@@ -24,3 +24,10 @@ export const projects = [
       link2: "https://thegrunyons.com/",
   }
 ]
+
+export const navItems = [
+    { name: 'About', link: '#about' },
+    { name: 'Portfolio', link: '#portfolio' },
+    { name: 'Testimonials', link: '#testimonials' },
+    { name: 'Contact', link: '#contact' }
+]
