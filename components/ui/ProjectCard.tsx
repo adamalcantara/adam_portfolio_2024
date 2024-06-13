@@ -28,8 +28,8 @@ const projects = [
     title: "The Guitarologist",
     des: "This ReactJS website has a responsive masonry gallery and lightbox",
     img: theguitarologist,
-    link1: "https://github.com/adamalcantara/grunyons",
-    link2: "https://thegrunyons.com/",
+    link1: "https://github.com/adamalcantara/theguitarologist_react",
+    link2: "https://theguitarologist-ff456.web.app/",
 }
 ]
 
@@ -41,7 +41,7 @@ const ProjectCard = () => {
       <div className='grid grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-10 xl:gap-5 w-4/5 xl:w-11/12 2xl:w-11/12 mt-10'>
         {projects.map((project) => (
             // The cards
-            <div className='bg-slate-900 border border-white/[0.2] rounded-xl p-4 w-full'>
+            <div key={project.id} className='bg-slate-900 border border-white/[0.2] rounded-xl p-4 w-full'>
               <h2 className='font-bold text-2xl'>{project.title}</h2>
               <p className='mb-4 mt-4 lg:text-md xl:text-xs '>{project.des}</p>
               <a href={project.link2}>                
