@@ -13,7 +13,7 @@ const Hero = () => {
             className='text-7xl lg:text-6xl md:text-5xl sm:text-4xl' 
             words="Greetings, I'm Adam" 
         />
-        <p className='text-3xl md:text-2xl sm:text-xl'>I'm a front end developer</p>
+        <p className='text-3xl md:text-2xl sm:text-xl'>I&#39;m a front end developer</p>
       </div>
     </div>
   )
