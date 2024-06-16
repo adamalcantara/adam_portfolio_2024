@@ -4,11 +4,20 @@ import React from 'react'
 import finishchecker from "../../data/img/finishchecker.png";
 import grunyons from "../../data/img/grunyons.png";
 import theguitarologist from "../../data/img/theguitarologist.png"
+import iphone from "../../data/img/iphone.png";
 
 
 const projects = [
   {
-      id: 1,
+    id: 1,
+    title: "iPhone Website Clone",
+    des: "A clone of the iPhone 15 Pro website built using ReactJS and GSAP animations.",
+    img: iphone,
+    link1: "https://github.com/adamalcantara/iphone_clone",
+    link2: "https://iphone-clone-4d9a5.web.app/",
+  },
+  {
+      id: 2,
       title: "Finish Checker",
       des: "A simple web application built with HTML, CSS, JavaScript, and Open Weather API.",
       img: finishchecker,
@@ -16,7 +25,7 @@ const projects = [
       link2: "https://adamalcantara.github.io/finishchecker/",
   },
   {
-      id: 2,
+      id: 3,
       title: "The Grunyons",
       des: "A simple application built in ReactJS. It features a Spotify implementation.",
       img: grunyons,
@@ -24,7 +33,7 @@ const projects = [
       link2: "https://thegrunyons.com/",
   },
   {
-    id: 3,
+    id: 4,
     title: "The Guitarologist",
     des: "This ReactJS website has a responsive masonry gallery and lightbox",
     img: theguitarologist,
@@ -44,7 +53,7 @@ const ProjectCard = () => {
             <div key={project.id} className='bg-slate-900 border border-white/[0.2] rounded-xl p-4 w-full'>
               <h2 className='font-bold text-2xl'>{project.title}</h2>
               <p className='mb-4 mt-4 lg:text-md xl:text-xs '>{project.des}</p>
-              <a href={project.link2}>                
+              <a href={project.link2} target='_blank'>                
                 <img src={project.img.src} alt="" className='w-full hover:opacity-70 transition duration-200'></img>
               </a>
               {/* div for buttons at bottom */}
