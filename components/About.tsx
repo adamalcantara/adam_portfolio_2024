@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaLinkedin, FaGithub, FaFileDownload } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -6,10 +7,22 @@ const About = () => {
         <div className='flex md:flex-col md:items-center md:text-center text-xl text-white w-4/5 p-4'>
             {/* Left div */}
             <div className='w-1/2 md:w-full pr-20 md:pr-0'>I&#39;m a front-end developer who is focused on creating dynamic user experiences and responsive websites. I&#39;m a graduate of Wilmington University with a Bachelor&#39;s of Science in Computer Science. I also attended University of Centeral Florida&#39;s full stack web development bootcamp.</div>
+
+
             {/* right div */}
-            <div className='flex flex-col justify-center items-center w-1/2 md:w-full md:mt-10 border-l-2 md:border-l-0 md:border-t-2'>
-                <p className='md:mt-10 font-bold text-2xl'>My Resume</p>
-                <a href='/resume_dev_2024.pdf' target='_blank' className='p-3 mt-3 bg-slate-800 hover:bg-slate-600 rounded-md border border-white/[0/1]'>Download</a>
+            <div className='flex justify-center items-center gap-10 md:border-l-0 md:border-t-2 md:mt-10 border-l-2 w-1/2 md:pt-10 lg:flex-col md:flex-row md:gap-5'>
+              <a href="https://www.linkedin.com/in/adam-alcantara/" target='_blank' className='flex flex-col justify-center items-center md:w-full hover:text-slate-400'>
+                <FaLinkedin className='text-4xl mb-2' />
+                <p  className='font-bold text-2xl'>LinkedIn</p>
+              </a>
+              <a href="https://github.com/adamalcantara" target="_blank" className='flex flex-col justify-center items-center md:w-full hover:text-slate-400'>
+                <FaGithub className='text-4xl mb-2' />
+                <p className='font-bold text-2xl'>GitHub</p>
+              </a>
+              <a href='/resume_dev_Alcantara_2024.pdf' target='_blank' className='flex flex-col justify-center items-center md:w-full hover:text-slate-400'>
+                <FaFileDownload className='text-4xl mb-2' />
+                <p className='font-bold text-2xl'>Resume</p>
+              </a>
             </div>
         </div>
     </div>

@@ -38,7 +38,7 @@ const projects = [
     des: "This ReactJS website has a responsive masonry gallery and lightbox",
     img: theguitarologist,
     link1: "https://github.com/adamalcantara/theguitarologist_react",
-    link2: "https://theguitarologist-ff456.web.app/",
+    link2: "https://www.theguitarologist.com/",
 }
 ]
 
