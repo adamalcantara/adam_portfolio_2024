@@ -1,6 +1,7 @@
 import React from 'react'
-import { FaHtml5, FaCss3, FaReact, FaWordpress } from 'react-icons/fa'
+import { FaHtml5, FaCss3, FaReact, FaWordpress, FaPython } from 'react-icons/fa'
 import { RiTailwindCssFill } from "react-icons/ri";
+import { BsFiletypeSql } from "react-icons/bs";
 
 const technologies = [
   {
@@ -20,13 +21,23 @@ const technologies = [
   },
   {
     id: 4,
-    name: "TailwindCSS",
+    name: "Tailwind CSS",
     icon: <RiTailwindCssFill />,
   },
   {
     id: 5,
     name: "Wordpress",
     icon: <FaWordpress />,
+  },
+  {
+    id: 6,
+    name: "Python",
+    icon: <FaPython />,
+  },
+  {
+    id: 7,
+    name: "SQL",
+    icon: <BsFiletypeSql />,
   },
 ]
 
@@ -40,7 +51,7 @@ const Skills = () => {
         <div className='mt-10 grid sm:grid-cols-2 grid-cols-5 md:gap-x-25 lg:gap-x-20'>
           {/* map over the skills and create cards */}
           {technologies.map((technology) => (
-            <div key={technology.id} className='flex flex-col justify-center items-center sm:mt-5 md:mt-0'>
+            <div key={technology.id} className='flex flex-col justify-center items-center sm:mt-5 md:mt-0 mt-5'>
               <p className='md:text-3xl text-5xl'>{technology.icon} </p>
               <p className='md:text-xl text-2xl mt-2'>{technology.name}</p>
             </div>

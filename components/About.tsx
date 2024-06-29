@@ -19,7 +19,7 @@ const About = () => {
                 <FaGithub className='text-4xl mb-2' />
                 <p className='font-bold text-2xl'>GitHub</p>
               </a>
-              <a href='/resume_dev_Alcantara_2024.pdf' target='_blank' className='flex flex-col justify-center items-center md:w-full hover:text-slate-400'>
+              <a href='/alcantara_resume_dev_2024_noinfo.pdf' target='_blank' className='flex flex-col justify-center items-center md:w-full hover:text-slate-400'>
                 <FaFileDownload className='text-4xl mb-2' />
                 <p className='font-bold text-2xl'>Resume</p>
               </a>
